@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#4b000c;
+    color:#f4eee6;
+    font-family:'Inter', sans-serif;
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 60px;
+
+    background:#4b000c;
+    z-index:1000;
+}
+
+.logo{
+    font-family:'Cormorant Garamond', serif;
+    font-size:2rem;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:#f4eee6;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:0.95rem;
+    letter-spacing:1px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    opacity:0.6;
+}
+
+/* HERO */
+
+.hero{
+    min-height:70vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:80px 10%;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:7rem;
+    font-weight:400;
+    line-height:0.9;
+}
+
+.hero h1 span{
+    display:block;
+}
+
+.hero-text{
+    margin-top:30px;
+    font-size:1rem;
+    letter-spacing:2px;
+}
+
+/* GALLERY */
+
+.gallery-section{
+    padding:50px 0;
+}
+
+.gallery{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+
+    padding:20px 10%;
+}
+
+.gallery img{
+    width:320px;
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:4px;
+
+    flex-shrink:0;
+
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* CONTACT PREVIEW */
+
+.contact-preview{
+    background:#efe7dc;
+    color:#4b000c;
+
+    text-align:center;
+
+    padding:100px 20px;
+}
+
+.contact-preview h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.contact-preview p{
+    margin-bottom:40px;
+}
+
+.button{
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border:1px solid #4b000c;
+
+    color:#4b000c;
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#4b000c;
+    color:#efe7dc;
+}
+
+/* ABOUT */
+
+.about-page{
+    display:flex;
+    gap:60px;
+
+    align-items:center;
+
+    padding:100px 10%;
+}
+
+.about-image img{
+    width:450px;
+    height:600px;
+    object-fit:cover;
+}
+
+.about-text{
+    max-width:600px;
+}
+
+.about-text h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:5rem;
+
+    margin-bottom:30px;
+}
+
+.about-text p{
+    margin-bottom:25px;
+    line-height:1.8;
+}
+
+/* CONTACT */
+
+.contact-page{
+    padding:120px 10%;
+    min-height:70vh;
+}
+
+.contact-page h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:5rem;
+
+    margin-bottom:50px;
+}
+
+.contact-info p{
+    margin-bottom:25px;
+    font-size:1.1rem;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+
+    border-top:1px solid rgba(255,255,255,0.1);
+
+    margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    header{
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:4rem;
+    }
+
+    .about-page{
+        flex-direction:column;
+    }
+
+    .about-image img{
+        width:100%;
+        height:auto;
+    }
+
+    .about-text h1{
+        font-size:3rem;
+    }
+
+    .contact-page h1{
+        font-size:3rem;
+    }
+}
